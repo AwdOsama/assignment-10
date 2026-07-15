@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Alexandria";
+  src: url(../fonts/Alexandria-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Cairo";
+  src: url(../fonts/Tajawal-Bold.ttf);
+}
+@font-face {
+  font-family: "Tajawal";
+  src: url(../fonts/Cairo-VariableFont_slnt\,wght.ttf);
+}
+.alexandria {
+  font-family: "Alexandria", sans-serif;
+}
+
+.tajawal {
+  font-family: "Tajawal", sans-serif;
+}
+
+.cairo {
+  font-family: "Cairo", sans-serif;
+}
+.font-option.active {
+  border-color: var(--color-primary) !important;
+}
+.filter-active {
+  background: linear-gradient(
+    to right,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+  color: #fff;
+  box-shadow: 0 10px 25px var(--color-primary);
+}
+
+.filter-inactive {
+  background: #fff;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.filter-inactive:hover {
+  background: #f8fafc;
+}
+
+.dark .filter-inactive {
+  background: #1e293b;
+  color: #cbd5e1;
+  border-color: #334155;
+}
+.dark .filter-inactive:hover {
+  background: #334155;
+}
+.translate-0 {
+  transform: translateX(0%);
+}
+
+@media (max-width: 639px) {
+  .translate-100 {
+    transform: translateX(100%);
+  }
+
+  .translate-200 {
+    transform: translateX(200%);
+  }
+
+  .translate-300 {
+    transform: translateX(300%);
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .translate-100 {
+    transform: translateX(50%);
+  }
+
+  .translate-200 {
+    transform: translateX(100%);
+  }
+
+  .translate-300 {
+    transform: translateX(150%);
+  }
+}
+
+@media (min-width: 1024px) {
+  .translate-100 {
+    transform: translateX(33.3333%);
+  }
+
+  .translate-200 {
+    transform: translateX(66.6666%);
+  }
+
+  .translate-300 {
+    transform: translateX(100%);
+  }
+}
+.carousel-indicator {
+  background-color: #94a3b8; 
+  transition: 0.3s;
+}
+
+.carousel-indicator.active {
+  background-color: var(--color-accent);
+}
