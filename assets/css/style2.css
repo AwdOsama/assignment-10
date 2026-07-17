@@ -68,6 +68,9 @@
   .translate-300 {
     transform: translateX(300%);
   }
+    .translate-bar {
+    transform: translate(-240px, -50%) !important;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 1023px) {
@@ -81,6 +84,9 @@
 
   .translate-300 {
     transform: translateX(150%);
+  }
+    .translate-bar {
+    transform: translate(-320px, -50%) !important;
   }
 }
 
@@ -96,9 +102,12 @@
   .translate-300 {
     transform: translateX(100%);
   }
+  .translate-bar {
+    transform: translate(-320px, -50%) !important;
+  }
 }
 .carousel-indicator {
-  background-color: #94a3b8; 
+  background-color: #94a3b8;
   transition: 0.3s;
 }
 

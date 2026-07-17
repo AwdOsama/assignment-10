@@ -52,14 +52,14 @@ window.addEventListener("scroll", function () {
 barBtn.addEventListener("click", function () {
   bar.classList.toggle("translate-x-full");
   if (bar.classList.contains("translate-x-full")) {
-    barBtn.style.transform = "translateY(-50%)";
+    barBtn.classList.remove("translate-bar");
   } else {
-    barBtn.style.transform = "translate(-320px, -50%)";
+    barBtn.classList.add("translate-bar");
   }
 });
 closeBar.addEventListener("click", function () {
   bar.classList.add("translate-x-full");
-  barBtn.style.transform = "translate(0%, -50%)";
+  barBtn.classList.remove("translate-bar");
 });
 
 for (var i = 0; i < colorBtns.length; i++) {
